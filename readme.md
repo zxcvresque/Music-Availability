@@ -26,7 +26,7 @@ Check whether a **track/album is available in other regions** on supported music
 - [💡 Why this exists](#-why-this-exists)
 - [✨ Core UI/UX features](#-core-uiux-features)
 - [🎵 Platforms](#-platforms)
-  - [## 🌊 <img src="https://www.google.com/s2/favicons?sz=64&domain=tidal.com" width="18" height="18" alt=""> TIDAL](#-tidal)
+  - [<img src="https://www.google.com/s2/favicons?sz=64&domain=tidal.com" width="18" height="18" alt=""> TIDAL](#-tidal)
   - [<img src="https://www.google.com/s2/favicons?sz=64&domain=qobuz.com" width="18" height="18" alt=""> Qobuz](#-qobuz)
   - [<img src="https://www.google.com/s2/favicons?sz=64&domain=spotify.com" width="18" height="18" alt=""> Spotify](#-spotify)
 - [🧩 Requirements](#-requirements)
