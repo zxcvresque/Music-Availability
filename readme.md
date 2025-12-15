@@ -1,6 +1,6 @@
 # 🎧 Music Availability — Various Platforms (Web Browser UserScripts)
 
-Check whether a **track/album is available in other regions** on supported music platforms — directly on the official site, with a clean in-page panel (search, copy, progress bar, floating/minimize, and persistent preferences).
+Check whether a **track/album is available in other regions** on supported music platforms — directly on the official site, with a clean in-page panel (**search, copy, progress bar, floating/minimize, persistent preferences**).
 
 <!-- ⚡ Quick Install -->
 <p align="center">
@@ -10,6 +10,10 @@ Check whether a **track/album is available in other regions** on supported music
   &nbsp;&nbsp;
   <a href="https://greasyfork.org/scripts/559044/code/Qobuz%20Availability.user.js" title="Install Qobuz Availability">
     <img alt="Install Qobuz" src="https://img.shields.io/badge/Install%20Qobuz.user.js-00b3b3?style=for-the-badge&logo=greasyfork&logoColor=white">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://greasyfork.org/scripts/559051/code/Spotify%20Availability.user.js" title="Install Spotify Availability">
+    <img alt="Install Spotify" src="https://img.shields.io/badge/Install%20Spotify.user.js-00b3b3?style=for-the-badge&logo=greasyfork&logoColor=white">
   </a>
 </p>
 
@@ -22,8 +26,9 @@ Check whether a **track/album is available in other regions** on supported music
 - [💡 Why this exists](#-why-this-exists)
 - [✨ Core UI/UX features](#-core-uiux-features)
 - [🎵 Platforms](#-platforms)
-  - [🌊 TIDAL](#-tidal)
-  - [🟦 Qobuz](#-qobuz)
+  - [## 🌊 <img src="https://www.google.com/s2/favicons?sz=64&domain=tidal.com" width="18" height="18" alt=""> TIDAL](#-tidal)
+  - [<img src="https://www.google.com/s2/favicons?sz=64&domain=qobuz.com" width="18" height="18" alt=""> Qobuz](#-qobuz)
+  - [<img src="https://www.google.com/s2/favicons?sz=64&domain=spotify.com" width="18" height="18" alt=""> Spotify](#-spotify)
 - [🧩 Requirements](#-requirements)
 - [▶️ How to use](#️-how-to-use)
 - [🛠️ Troubleshooting](#️-troubleshooting)
@@ -36,11 +41,14 @@ Check whether a **track/album is available in other regions** on supported music
 
 ## 📸 Showcase
 
-### 🌊 TIDAL
+### <img src="https://www.google.com/s2/favicons?sz=64&domain=tidal.com" width="18" height="18" alt=""> TIDAL
 ![TIDAL Availability Panel](Images/tidal-display.png)
 
-### 🟦 Qobuz
+### <img src="https://www.google.com/s2/favicons?sz=64&domain=qobuz.com" width="18" height="18" alt=""> Qobuz
 ![Qobuz Availability Panel](Images/qobuz-display.png)
+
+### <img src="https://www.google.com/s2/favicons?sz=64&domain=spotify.com" width="18" height="18" alt=""> Spotify
+![Spotify Availability Panel](Images/spotify-display.png)
 
 ---
 
@@ -70,13 +78,14 @@ Shared across supported platforms for consistency:
 - 💾 **Remembers UI state globally** (floating on/off + minimized)
 - ⭐ **Advanced → Preferred countries** (choose default country(s) to always highlight; saved globally)
 - 🏳️ **Flags + ISO chips** with graceful fallback (flags auto-hide if blocked)
-- 🧠 **Live results while scanning**, then final output is **alphabetically sorted** (A→Z)
+- 🧠 **Live results while loading**, then final output is **alphabetically sorted** (A→Z) where applicable
+- 📦 **Compact scroll containers** for long country lists (especially Spotify)
 
 ---
 
 ## 🎵 Platforms
 
-## 🌊 TIDAL
+## <img src="https://www.google.com/s2/favicons?sz=64&domain=tidal.com" width="18" height="18" alt=""> TIDAL
 
 ### ✅ What it does
 Checks **TIDAL track/album** availability across regions using TIDAL’s API (`countryCode`).
@@ -96,7 +105,6 @@ Checks **TIDAL track/album** availability across regions using TIDAL’s API (`c
 A region is **available** if TIDAL’s API returns a valid response for that track/album under the given `countryCode`.
 
 ### ⬇️ Install (TIDAL)
-
 <p>
   <a href="https://greasyfork.org/scripts/559043/code/TIDAL%20Availability.user.js" title="Install TIDAL Availability">
     <img alt="Install TIDAL" src="https://img.shields.io/badge/Install%20TIDAL.user.js-00b3b3?style=for-the-badge&logo=greasyfork&logoColor=white">
@@ -109,7 +117,7 @@ A region is **available** if TIDAL’s API returns a valid response for that tra
 
 ---
 
-## 🟦 Qobuz
+## <img src="https://www.google.com/s2/favicons?sz=64&domain=qobuz.com" width="18" height="18" alt=""> Qobuz
 
 ### ✅ What it does
 Checks **Qobuz track/album** availability across **official Qobuz storefront countries** by loading localized product pages.
@@ -133,13 +141,39 @@ A region is **available** if the localized Qobuz storefront page loads and looks
 - ✅ Available chips open the matching Qobuz storefront page
 
 ### ⬇️ Install (Qobuz)
-
 <p>
   <a href="https://greasyfork.org/scripts/559044/code/Qobuz%20Availability.user.js" title="Install Qobuz Availability">
     <img alt="Install Qobuz" src="https://img.shields.io/badge/Install%20Qobuz.user.js-00b3b3?style=for-the-badge&logo=greasyfork&logoColor=white">
   </a>
   &nbsp;
   <a href="https://greasyfork.org/en/scripts/559044-qobuz-availability" title="View on Greasy Fork">
+    <img alt="View on Greasy Fork" src="https://img.shields.io/badge/View%20on%20Greasy%20Fork-111?style=for-the-badge&logo=greasyfork&logoColor=white">
+  </a>
+</p>
+
+---
+
+## <img src="https://www.google.com/s2/favicons?sz=64&domain=spotify.com" width="18" height="18" alt=""> Spotify
+
+### ✅ What it does
+Checks **Spotify track/album** availability across countries using the item’s `available_markets`.
+
+### 🌐 Supported URLs
+- `open.spotify.com`
+
+### 🔐 Login
+- ✅ Works on the web player (guest mode is fine; token is fetched from Spotify web)
+
+### ✅ What “available” means
+A country is **available** if it appears in Spotify’s `available_markets` list for that track/album.
+
+### ⬇️ Install (Spotify)
+<p>
+  <a href="https://greasyfork.org/scripts/559051/code/Spotify%20Availability.user.js" title="Install Spotify Availability">
+    <img alt="Install Spotify" src="https://img.shields.io/badge/Install%20Spotify.user.js-00b3b3?style=for-the-badge&logo=greasyfork&logoColor=white">
+  </a>
+  &nbsp;
+  <a href="https://greasyfork.org/en/scripts/559051-spotify-availability" title="View on Greasy Fork">
     <img alt="View on Greasy Fork" src="https://img.shields.io/badge/View%20on%20Greasy%20Fork-111?style=for-the-badge&logo=greasyfork&logoColor=white">
   </a>
 </p>
@@ -186,7 +220,7 @@ Supported browsers:
 ## 🤝 Contributing (PRs welcome)
 
 Contributions are welcome — especially:
-- ➕ adding more platforms (Spotify / Deezer / Apple Music / Amazon / etc.)
+- ➕ adding more platforms (Deezer / Apple Music / Amazon / etc.)
 - 🧼 UI consistency improvements (keep it clean + compact)
 - 🚀 performance optimizations that **don’t reduce correctness**
 - 🧪 edge-case fixes for new layouts / endpoints
@@ -202,5 +236,3 @@ Contributions are welcome — especially:
 ## 🧾 Credits
 
 Made by **Zxcvr**.
-
-If you like it: ⭐ star the repo and share it 🙂
